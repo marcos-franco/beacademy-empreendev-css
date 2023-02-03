@@ -1,0 +1,67 @@
+<!--
+    
+Antes do modulo Flebox Layout, havia quatro modos de layout:
+
+*Block - para secoes em uma pagina da web
+
+*Inline - para textos
+*Table - para dados de tabela bidimensionais
+*Position - para posicao explicita de um elemento
+
+O modulo de Flexbox, torna mais facial projetar uma estrutura de 
+layout responsiva flexivel sem usar flutuacao ou posicionamento
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex - justify content</title>
+</head>
+
+<style>
+
+    .Container {
+        display: flex;
+        width: 100%;
+        height: auto;
+        background: yellow;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        gap: 12px; 
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        display: block;        
+    }
+
+    .box1 {
+        background: red;
+    }
+
+    .box2 {
+        background: blue;
+    }
+
+    .box3 {
+        background: green;
+    }
+
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+
+</body>
+</html>   

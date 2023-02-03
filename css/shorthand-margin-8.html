@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorthand and Margin</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font: italic 100 32px 'arial', sans-serif;
+    }
+
+    .box {
+        background-color: red;
+        /* margin shorthand */
+
+        /* margin: 24px 8px; */
+        /* top/bottom right/left */
+
+        /* margin: 12px 80px 4px; */
+        /* top right/left bottom */
+
+        margin: 8px 4px 12px 42px;
+        /* top right left bottom */
+
+    }
+
+    .box2 {
+        background: green;
+
+    }
+
+    .box3 {
+        background: blue;
+    }
+</style>
+
+<body>
+
+<!-- Este recurso (SHORTHAND e MARGIN), é usado para agrupar propriedades
+    Sendo assim sua escrita ficara mais curta.
+-->
+
+    <div class="box">
+        <h1>titulo</h1>
+    </div>
+
+    <div class="box2">
+        <h1>titulo2</h1>
+    </div>
+
+    <div class="box3">
+        <h1>titulo3</h1>
+    </div>
+
+</body>
+</html>

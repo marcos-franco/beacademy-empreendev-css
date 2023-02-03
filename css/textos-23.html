@@ -1,0 +1,77 @@
+
+<!--
+Trabalhanco com textos
+
+Tipografia:
+- Tamanho
+- Estilo
+- Força
+
+Básico de propriedades de fonte
+
+* font-family - Tipo de fonte do elemento, padrão sans-serif
+* font-weight - Peso da fonte, 400, 500, 700, bold
+* font-style - normal, italic, oblique, none
+* font-size - tamanho da fonte, px, em, rem, %
+* font-variant - normal, small-caps
+* font-strech - Nem todas as fonts dão suporte a esta propriedade
+permite manipular caracteres - condesed, normal, expanded
+
+* letter-spacing: espaçamento entre palavras
+* word-spacing: espaçamento de palavras
+* line-height: Espaço entre linhas (pode ser por unidades ou sem unidade)
+* text-transform:
+lowercase, uppercase, (minúscula e maiscúlas)
+capitalize (Cada palavra inicia com letra maaiúscula)
+
+*text-decoration estilos - text-decoration: underline wave, dashed, dotted,
+                           duoble e também cores
+
+
+* text-align: center, left, right, justify
+* text-shadow:
+    text-shadow: 1px 1px 1px red
+                 offset-x, offset-y -blur e cor
+
+
+* shorthand: italic normal bold normal 3em/1.5 Halvetica, Arial, sans-serif
+             style, variant, weight, stretch, size, line-height, family
+
+Webfonts:
+@import
+@font-face
+link
+https://fonts.google.com
+    
+-->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com fontes</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;700&family=Poppins:wght@400;600&family=Roboto:wght@500;700;900&family=Ubuntu:wght@300;400;500&display=swap');
+
+
+h1{
+    color: black;
+    font-family: 'inter', sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;    
+}
+
+h2{
+    color: blue;
+    line-height: 4rem;
+}
+</style>
+
+<body>
+    <h1>testando fontes</h1>
+    <h2>outro teste de fonte</h2>
+</body>
+</html>

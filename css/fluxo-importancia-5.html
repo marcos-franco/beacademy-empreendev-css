@@ -1,0 +1,84 @@
+<!--
+
+O browser determina qual regra aplicar aplicar e como aplicar, caso haja diversas regras para o 
+fluxo de leitura da sua folha de estilo é de cima para baixo
+
+ *** IMPORTANTE CONSIDERAR ***
+
+ 1. Origem da folha de estilo
+ 2. Especificidade
+ 3. importância
+
+ *** TPOIS DE ESTILOS ***
+
+ Inline > Tag style > Tag link
+
+* Especificidade
+
+Cálculo matemático desenvolvido automaticamente pela regra CSS, onde cada tipo de seletores e origem de estilo possuem valores a serem considerados.
+
+0. Universal selector, combinator e pseudo-class (:not())
+1. Elementos do tipo selector e pseudo-elementos (::before, ::after)
+10. Classes e atributos de seletores ([type="radio"])
+100. Seletor ID
+1000. Inline
+
+---------------------------------------------------------------------
+
+#At-rules
+  São regras relacionadas ao comportamento do CSS, começa com um sinal de @ seguido do identificador e do valor.
+
+  São as seguintes:
+  @import serve para incluir um CSS externo.
+
+  @import url("http://linkexterno.com.br/style.css")
+
+  @media são regras condicionais para vários dispositivos.
+
+  @media (min-width: 365px) {
+
+  }
+
+  @font-face {
+
+  }
+
+  @keyframes animationname {
+
+  }
+--> 
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document importância</title>
+    <link rel="stylesheet" href="./assets/style.css">    
+    
+<!--  
+   Pelo lógica, o menos importante no grau de importância, 
+   na verdade é o mais correto e importante de todos!
+   <link rel="stylesheet" href="./assets/style.css">
+-->        
+    
+<!--
+    <style>               
+        h1 {
+            background: blue;
+        }        
+    </style>    
+-->
+</head>
+<!--
+<body>    
+    <div>        
+        <h1 style="background: red;">Eu sou um Título</h1>    
+    </div>
+</body>
+-->
+<h1>Eu sou um Título</h1>
+
+</html>
